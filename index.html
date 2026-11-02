@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Discover beautiful wallpapers for phones, desktops, and tablets. Explore gaming, nature, anime, cars, space, animals, and more on Wallpaper World.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Wallpaper World — Premium Wallpapers">
+  <meta property="og:description" content="Explore wallpapers for every screen and style.">
+  <meta property="og:type" content="website">
+  <title>Wallpaper World — Premium Wallpapers</title>
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Wallpaper World",
+    "description": "A wallpaper gallery for phones, desktops and tablets.",
+    "url": "https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Wallpaper World home">
+      <span class="brand-mark">W</span>
+      <span>Wallpaper<span class="brand-accent">World</span></span>
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#explore">Explore</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR SCREEN, YOUR STYLE</span>
+        <h1>Find your next<br><span class="gradient-text">favorite wallpaper.</span></h1>
+        <p>Fresh looks for your phone, desktop, and everything in between.</p>
+        <a class="primary-button" href="#explore">Explore wallpapers <span aria-hidden="true">↘</span></a>
+        <div class="hero-meta"><span>✦ Curated collections</span><span>•</span><span>Free downloads</span></div>
+      </div>
+      <div class="hero-art" aria-label="Featured wallpaper previews">
+        <div class="art-glow"></div>
+        <div class="art-card art-card-back">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=85" alt="Mountain peaks under a dramatic sky">
+        </div>
+        <div class="art-card art-card-front">
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=85" alt="Night sky filled with stars">
+          <span class="art-caption">BEYOND THE ORDINARY</span>
+        </div>
+        <span class="floating-tag">4K INSPIRED <span>✦</span></span>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Website features">
+      <div><span>✧</span> Every mood, one place</div>
+      <div><span>↗</span> Easy browsing</div>
+      <div><span>⬇</span> Simple downloads</div>
+    </section>
+
+    <section class="explore-section" id="explore">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE COLLECTION</span>
+          <h2>Explore wallpapers</h2>
+          <p>Find a look that feels like you.</p>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search wallpapers..." aria-label="Search wallpapers">
+          <kbd>/</kbd>
+        </label>
+      </div>
+
+      <div class="category-row" id="categoryRow" aria-label="Wallpaper categories">
+        <button class="category-chip active" data-category="All">✦ All wallpapers</button>
+        <button class="category-chip" data-category="Nature">🌄 Nature</button>
+        <button class="category-chip" data-category="Gaming">🎮 Gaming</button>
+        <button class="category-chip" data-category="Anime">⚡ Anime</button>
+        <button class="category-chip" data-category="Cars">🏎️ Cars</button>
+        <button class="category-chip" data-category="Space">🌌 Space</button>
+        <button class="category-chip" data-category="Animals">🐾 Animals</button>
+        <button class="category-chip" data-category="Architecture">🏙️ Architecture</button>
+        <button class="category-chip" data-category="Aesthetic">🎨 Aesthetic</button>
+        <button class="category-chip" data-category="Flowers">🌸 Flowers</button>
+      </div>
+
+      <div class="results-line">
+        <span id="resultsCount" aria-live="polite">Loading wallpapers…</span>
+        <label class="sort-control">Sort
+          <select id="sortSelect" aria-label="Sort wallpapers">
+            <option value="featured">Featured</option>
+            <option value="title">Title A–Z</option>
+            <option value="category">Category</option>
+          </select>
+        </label>
+      </div>
+      <div class="wallpaper-grid" id="wallpaperGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span>⌕</span>
+        <h3>No wallpapers found</h3>
+        <p>Try a different search or choose another category.</p>
+        <button class="secondary-button" id="resetFilters">Reset filters</button>
+      </div>
+      <p class="content-note">Image previews are provided for demonstration. Before publishing, verify image licences and replace any images you do not have permission to use.</p>
+    </section>
+
+    <section class="newsletter-panel">
+      <div class="newsletter-icon">✦</div>
+      <div><span class="eyebrow">MAKE IT YOURS</span><h2>A fresh look starts here.</h2><p>Browse the collection and find a wallpaper for your next screen refresh.</p></div>
+      <a href="#explore" class="secondary-button">Browse collection ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Wallpaper<span class="brand-accent">World</span></span></a>
+    <p>Find a little inspiration for every screen.</p>
+    <nav aria-label="Footer navigation"><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a></nav>
+    <small>© <span id="year"></span> Wallpaper World. Please respect image creators’ rights.</small>
+  </footer>
+
+  <dialog id="wallpaperDialog" class="wallpaper-dialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="dialogClose" aria-label="Close preview">×</button>
+    <img id="dialogImage" src="" alt="">
+    <div class="dialog-info">
+      <div><span class="eyebrow" id="dialogCategory"></span><h2 id="dialogTitle"></h2><p id="dialogDescription"></p></div>
+      <a class="primary-button" id="downloadButton" href="#" target="_blank" rel="noopener">Open image ↗</a>
+    </div>
+    <p class="dialog-note">Download availability depends on the image source and its licence. Use only images you are allowed to download and reuse.</p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
